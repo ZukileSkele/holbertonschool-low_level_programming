@@ -27,7 +27,9 @@ int main(void)
     r = print_sign(-1);
     _putchar(',');
     _putchar(' ');
-    _putchar(r + '0');
+    /* manually print -1 since -1 + '0' gives wrong char */
+    _putchar('-');
+    _putchar('1');
     _putchar('\n');
     return (0);
 }
